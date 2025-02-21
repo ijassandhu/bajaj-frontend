@@ -43,19 +43,19 @@ const Bfhl = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 p-6">
-      <h1 className="text-xl font-bold">BFHL Challenge</h1>
-      <div className="w-full max-w-md border p-4 rounded-lg">
+    <div className="flex flex-col items-center gap-5 p-6">
+      <h1 className="text-xl ">BFHL</h1>
+      <div className="w-full max-w-md border p-4 rounded-2xl">
         <textarea
           value={jsonInput}
           onChange={(e) => setJsonInput(e.target.value)}
-          placeholder="Enter JSON input"
-          className="w-full border p-2"
+          placeholder="Enter JSON"
+          className="w-full border p-3"
         />
         {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
         <button
           onClick={handleSubmit}
-          className="mt-4 w-full bg-blue-500 text-white p-2 rounded"
+          className="mt-4 w-full bg-blue-400 text-green p-3 rounded"
         >
           Submit
         </button>
